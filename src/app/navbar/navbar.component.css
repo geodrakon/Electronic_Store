@@ -1,0 +1,38 @@
+.act {
+  color: #feb101;
+  font-weight: 500;
+}
+a.nav-link {
+  font-size: 26px;
+}
+.name {
+  color: #fcdf13;
+  margin-left: 0px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 60px;
+  margin: 3px 15px 3px 0;
+}
+.navbar {
+  padding: 0;
+}
+.log {
+  margin-left: auto;
+}
+.log img {
+  width: 60px;
+  padding: 10px 15px 10px 0;
+}
+
+@media (max-width: 350px) {
+  .name {
+    font-size: 24px;
+  }
+  .logo {
+    width: 60px;
+    margin: 3px 10px 3px 0;
+  }
+}

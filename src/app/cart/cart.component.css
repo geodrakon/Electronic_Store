@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+.cart {
+  padding: 50px 30px;
+  background-color: #e2e4ff;
+  min-height: 75vh;
+}
+@media (max-width: 480px) {
+  .cart {
+    min-height: 48vh;
+  }
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.empty img {
+  max-width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+  min-height: 120px;
+}
+
+@media (max-width: 767px) {
+  .card {
+    flex-wrap: wrap;
+  }
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 170px;
+  width: 100%;
+  padding: 20px 0;
+}
+.card img {
+  max-height: 80px;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 100%;
+  padding: 10px 0px 10px 20px;
+}
+
+.title {
+  width: 50%;
+}
+.price {
+  padding: 0 20px 0 0;
+}
+
+span {
+  color: red;
+}
+.price span {
+  color: #6b74f8;
+  font-size: 22px;
+}
+
+.delete {
+  max-width: 120px;
+  height: 35px;
+  margin: 10px 20px 10px 0;
+  border: 2px solid #7e86f8;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.delete:hover {
+  background-color: #6b74f8;
+  color: white;
+}
+
+.total {
+  display: flex;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  width: 50%;
+}
+
+.order {
+  text-align: right;
+}
+
+.order-now {
+  background: rgb(244, 150, 0);
+  background: linear-gradient(
+    270deg,
+    rgba(244, 150, 0, 1) 0%,
+    rgba(250, 222, 18, 1) 100%
+  );
+
+  color: black;
+  border: 1px solid #6b74f8;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 50px 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 220px;
+}
+
+.order-now:hover {
+  background: rgb(229, 90, 0);
+  background: linear-gradient(
+    270deg,
+    rgba(229, 90, 0, 1) 0%,
+    rgba(244, 150, 0, 1) 100%
+  );
+  color: white;
+}
+@media (max-width: 480px) {
+  .text {
+    flex-direction: column;
+    align-items: start;
+  }
+  .title {
+    width: 90%;
+  }
+  .price {
+    padding: 0;
+  }
+  .delete {
+    max-width: 95%;
+    width: 95%;
+  }
+
+  .img {
+    margin: 0 auto;
+  }
+  .img img {
+    max-height: 120px;
+  }
+
+
+  .oeder {
+    padding: 0 20px;
+  }
+
+  .order-now {
+    width: 100%;
+  }
+}

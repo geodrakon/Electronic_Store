@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+.back {
+  background-image: url("https://img.freepik.com/premium-photo/hacker-technology-cyber-background_549339-975.jpg?size=626&ext=jpg&ga=GA1.2.104664509.1715021963&semt=ais_user");
+  background-position: center;
+  /* background-size: contain; */
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.head-in {
+  width: 90%;
+}
+.block2 {
+  display: flex;
+}
+
+.title {
+  width: 100%;
+}
+h1 {
+  font-size: 8vw;
+  color: #f49501;
+  padding-top: 30px;
+  text-shadow: 7px 7px 4px #0f1391, -1px -2px 2px #fcdf13;
+}
+
+h2 {
+  font-size: 4vw;
+  color: #f49501;
+  margin-top: 10px;
+  text-shadow: 6px 6px 4px #0f1391, -1px -1px 1px #fcdf13;
+}
+
+.transp {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+  margin: 3% 0 4%;
+}
+.transp img {
+  width: 65%;
+  min-width: 300px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .transp img {
+    width: 85%;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .transp img {
+    width: 95%;
+    min-width: 150px;
+  }
+}
+
+.click {
+  display: flex;
+  justify-content: start;
+  width: 50%;
+}
+.click img {
+  width: 100%;
+  min-width: 200px;
+  margin-top: -60px;
+  margin-bottom: -60px;
+  margin-left: -10%;
+  transition: all 0.5s;
+}
+.click img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.photos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+}
+.photo {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+.row1 {
+  border: 1px solid #e2e4ff;
+  border-bottom: none;
+}
+.row2 {
+  border: 1px solid #e2e4ff;
+  border-top: none;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.ph {
+  display: flex;
+  border: 1px solid #e2e4ff;
+}

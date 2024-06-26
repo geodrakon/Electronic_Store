@@ -1,0 +1,77 @@
+.brands {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(217, 217, 255);
+  padding-top: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+.icons-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.brand {
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.brand img {
+  width: 80%;
+  min-width: 65px;
+}
+
+.contacts {
+  background-color: rgb(217, 217, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+}
+.contacts .social img {
+  width: 35px;
+}
+
+.copy {
+  text-align: center;
+  padding: 0 35px 25px;
+  background-color: rgb(217, 217, 255);
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (max-width: 500px) {
+  .contacts {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 10px;
+  }
+  .mail,
+  .tel {
+    padding: 5px;
+  }
+}

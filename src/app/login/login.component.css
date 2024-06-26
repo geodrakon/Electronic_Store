@@ -1,0 +1,85 @@
+.login-page {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e4ff;
+
+  background: url("https://img.freepik.com/premium-photo/hacker-technology-cyber-background_549339-975.jpg?size=626&ext=jpg&ga=GA1.2.104664509.1715021963&semt=ais_user")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    max-width: 350px;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+  font-weight: bold;
+}
+
+.links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.links a {
+  display: block;
+  margin-bottom: 5px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}

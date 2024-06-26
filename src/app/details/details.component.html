@@ -1,0 +1,31 @@
+
+<div class="product-details-page">
+<div class="card" *ngIf="selectedProduct">
+  <div class="img">
+    <div class="images">
+      <img [src]="this.selectedProduct.images[0]" class="card-img-top" alt="" />
+      <img [src]="this.selectedProduct.images[1]" class="card-img-top" alt="" />
+      <img [src]="this.selectedProduct.images[2]" class="card-img-top" alt="" />
+      <img [src]="this.selectedProduct.images[3]" class="card-img-top" alt="" />
+    </div>
+    <a routerLink="/products"><img class="close" src="https://cdn-icons-png.flaticon.com/512/7124/7124232.png" alt=""/></a>
+  </div>
+  <div class="card-body">
+    <div class="text">
+      <h3 class="card-title">{{ this.selectedProduct.title }}</h3>
+      <p class="card-title">{{ this.selectedProduct.description }}</p>
+      <h5 class="card-title">Brand: {{ this.selectedProduct.brand }}</h5>
+      <h5 class="card-title">ID: {{ this.selectedProduct._id }}</h5>
+      <h5 class="card-title">Price: ${{ this.selectedProduct.price.current }}</h5>
+      <h5 class="card-title">Warranty: {{ this.selectedProduct.warranty }} month</h5>
+      <h5 class="card-title">Stock: {{ this.selectedProduct.stock }}</h5>
+      <h5 class="card-title">Rating: {{ this.selectedProduct.rating }}</h5>
+    </div>
+    <div class="buts">
+      <button routerLink="/products" class="back">GO BACK TO LIST</button>
+      <button (click)="addToCart(this.selectedProduct)" class="back add" *ngIf="add">ADD TO CART</button>
+      <button (click)="addToCart(this.selectedProduct)" class="back added"*ngIf="!add">ADDED TO CART</button>
+    </div>
+  </div>
+</div>
+</div>

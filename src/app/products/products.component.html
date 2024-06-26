@@ -1,0 +1,87 @@
+<div class="contain">
+  <div class="form-group">
+    <div class="inp">
+      <label for="search">Search by name</label>
+      <input
+        (input)="filter()"
+        [(ngModel)]="keyWord"
+        type="text"
+        id="search"
+        class="search"
+      />
+    </div>
+    <div class="price">
+      <div class="inp">
+        <label for="min">Minimal Price</label>
+        <input
+          (input)="filter()"
+          [(ngModel)]="minPrice"
+          type="text"
+          id="min"
+          class=""
+        />
+      </div>
+      <div class="inp">
+        <label for="max">Maximal Price</label>
+        <input
+          (input)="filter()"
+          [(ngModel)]="maxPrice"
+          type="text"
+          id="max"
+          class=""
+        />
+      </div>
+    </div>
+    <div class="inp">
+      <button (click)="chooseLeptop()" class="category">
+        <img
+          src="https://cdn-icons-png.freepik.com/256/59/59505.png?semt=ais_hybrid"
+          alt=""
+        /><span>LEPTOPS</span>
+      </button>
+      <button (click)="choosePhone()" class="category">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Smartphone_icon_-_Noun_Project_283536.svg/512px-Smartphone_icon_-_Noun_Project_283536.svg.png?20151231001023"
+          alt=""
+        /><span>PHONES</span>
+      </button>
+      <button (click)="chooseAll()" class="category">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/81/81043.png"
+          alt=""
+        /><span> ALL </span>
+      </button>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let item of productList">
+      <div class="card">
+        <div class="img">
+          <img [src]="item.thumbnail" class="card-img-top" alt="..." />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+
+          <h6 class="card-title">{{ item.category.name }}</h6>
+          <h6 class="card-title price">
+            <span class="thr">${{ item.price.beforeDiscount }}</span>
+            <span class="red">${{ item.price.current }}</span>
+            <span>{{ item.price.discountPercentage }}%</span>
+          </h6>
+          <h5 class="card-title"></h5>
+          <button
+            (click)="selectProduct(item)"
+            routerLink="/details"
+            [queryParams]="item"
+            class="see-det"
+          >
+            SEE DETAILS
+          </button>
+
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

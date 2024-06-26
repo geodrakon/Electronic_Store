@@ -1,0 +1,24 @@
+<div class="cart">
+  <div class="empty" *ngIf="empty">
+    <img src="https://deniche.in/image/cart-empty.png" alt="" />
+  </div>
+  <div class="total" *ngIf="!empty">
+    <h3>Total Items: <span>{{cartItems.length}}</span></h3>
+    <h3>Total Price: <span>${{ totalPrice }}</span></h3>
+  </div>
+  <div class="cards">
+    <div class="card" *ngFor="let item of cartItems; let i = index">
+      <div class="img">
+        <img [src]="this.item.thumbnail" alt="..." />
+      </div>
+      <div class="text">
+        <h5 class="title">{{ item.title }}</h5>
+        <h5 class="price"><span>${{ item.price.current }}</span></h5>
+        <button (click)="removeFromCart(i)" class="delete">REMOVE</button>
+      </div>
+    </div>
+  </div>
+  <div class="order" *ngIf="!empty">
+    <button class="order-now" routerLink="/error">ORDER NOW</button>
+  </div>
+</div>
